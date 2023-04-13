@@ -13,8 +13,8 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 # SQLAlchemy
 
-# Essa linha abaixo pode provocar conflito de portas e nunca rodar o serviço! achei a pegadinha hehe
-# app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://usr:pwd@localhost:5432/aemotor"
+# warningg
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://usr:pwd@pgsql:5432/aemotor"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
