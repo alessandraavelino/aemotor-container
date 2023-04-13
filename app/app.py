@@ -13,7 +13,6 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 # SQLAlchemy
 
-# warningg
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://usr:pwd@pgsql:5432/aemotor"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
